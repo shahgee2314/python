@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>
+        JQuerry
+        </title>
+    </head>
+    <body>
+    
+    <h1> Article Analyser</h1>
+    
+    <a href="{% url 'animations'%}"><h1> Go to Animations</h1></a>
+    <div>
+        <a href="{% url 'home'%}"><h1> Go to Home</h1></a>
+      
+       <br>{{article}} </br>
+       <hr>
+       
+    </div> 
+    <h1> This paraghraf has total words:  {{var_dict}} </h1>
+    
+    <br></br>
+    <h1> Wrods  </h1>
+    {%for word, count in var_dict %}
+    
+    <p>{{word}} :: {{count}}</p>
+    
+    {% endfor%}
+   
+    </body>
+</html>
+  

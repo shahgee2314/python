@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>
+        JQuerry
+        </title>
+        <style>
+            #circle {
+                width: 100px;
+                height: 100px;
+                background-color: red;
+                border-radius: 50%;
+                margin: 10px;
+            }
+        
+            .square {
+                width: 150px;
+                height: 150px;
+                background-color: green;
+                margin:20px;
+            }
+            #circle2 {
+                width: 100px;
+                height: 100px;
+                background-color: blue;
+                border-radius: 50%;
+                margin: 10px;
+            }
+            #circle, #circle2{
+                
+                cursor: pointer;
+            }
+        
+        </style>
+    </head>
+    <body>
+    
+    <h1> Animations</h1>
+    
+    <div id="circle"> </div>
+    
+     <div id="circle2"> </div>
+    
+    <div>
+        <a href="{% url 'home' %}"><h1> Go to Home</h1></a>
+    </div>
+    <div>
+        <a href="{% url 'article' %}"><h1> Go to Article Analyser</h1></a>
+    </div>
+    </body>
+</html>
+  
